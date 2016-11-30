@@ -1,5 +1,9 @@
+require 'database_cleaner'
+
 RSpec.feature 'homepage', :type => :feature do
+
   scenario 'see links on homepage' do
+
     Link.create(url: 'www.google.com', title: 'Google')
     visit '/links'
     expect(page.status_code).to eq 200
