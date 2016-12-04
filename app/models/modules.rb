@@ -1,3 +1,5 @@
+ENV["RACK_ENV"] ||= 'development'
+
 require_relative 'link.rb'
 require_relative 'tag.rb'
 
