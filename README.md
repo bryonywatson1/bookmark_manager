@@ -1,40 +1,66 @@
-User Stories
+# Battle
+## Weekly Challenge
+### Week Three
 
-As a user
-So that I can keep track of my bookmarks
-I want to see a list of my links
+A simple game where opponents inflict damage on each other.
 
-As a user
-so that I can store my links
-I would like to add new links to the list
+The tests can be run by installing the gems `bundle` followed by running `rspec` in the command line.
 
-As a user
-So that I can keep track of my links
-I want to be able to tag my links
-
-As a user
-so that I can keep track of my links
-I want to be able to filter my links by tag
+The app can be run by typing in `rackup` and navigating to `localhost:9292` in a web browser.
 
 
-Short blog post:
-  CRUD
-    CRUD stands for create, read, update and delete. These comprise the ways that a database can be interacted with. These make up the four functions of persistence storage. Persistence is a characteristic of a state that outlives the process that created it. This is unlike most computer programs that reset after they stop being used. Programs interact with databases by transferring data to and from them.
 
-    Create is about adding new entries.
-    Read is accessing the entries.
-    Update regards modifying existing entries.
-    Delete is when entries are destroyed.
+### User Stories
+```
+As two Players,
+So we can play a personalised game of Battle,
+We want to Start a fight by entering our Names and seeing them
+```
 
-  SQL
-    SQL stands for structured query language. It is a programming language designed for managing information held in a relational database management system (RDBMS).
+```
+As Player 1,
+So I can see how close I am to winning
+I want to see Player 2's Hit Points
+```
 
-  SQL Examples
+```
+As Player 1,
+So I can win a game of Battle,
+I want to attack Player 2, and I want to get a confirmation
+```
 
-    These are example for an existing database called students. That has a ID column and a varchar column called name.
+```
+As Player 1,
+So I can start to win a game of Battle,
+I want my attack to reduce Player 2's HP by 10
+```
 
-    C - INSERT INTO students (name)
-          VALUES ('Rorjack');
-    R - SELECT * FROM students;
-    U - UPDATE students SET name = 'Jackory' WHERE name = 'Rojack';
-    D - DELETE FROM students WHERE name = 'Jackory';
+```
+As two Players,
+So we can continue our game of Battle,
+We want to switch turns
+```
+
+```
+As Player 1,
+So I can see how close I am to losing,
+I want to see my own hit points
+```
+
+```
+As Player 1,
+So I can lose a game of Battle,
+I want Player 2 to attack me, and I want to get a confirmation
+```
+
+```
+As Player 1,
+So I can start to lose a game of Battle,
+I want Player 2's attack to reduce my HP by 10
+```
+
+```
+As a Player,
+So I can Lose a game of Battle,
+I want to see a 'Lose' message if I reach 0HP first
+```
